@@ -20,9 +20,18 @@ namespace COMP003A.Assignment6
             Completion = completion;
         }
 
+        // Displays each argument
         public void DisplayInfo()
         {
             Console.WriteLine($"Item {BookNumber}: Title={Title}, Pages={Pages}, Completed?={Completion}");
+        }
+
+        // Toggles completion status
+        public bool UpdateCompletion(bool completion)
+        {
+            
+            Completion = !Completion;
+            return Completion;
         }
     }
 }
